@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import Erro from './pages/Erro';
-import Produto from './pages/Produto';
+import Produto from './pages/Produto/produto';
 import Header from './components/Header';
 
 const RoutesConfig = () => {

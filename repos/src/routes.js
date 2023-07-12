@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/Main/main';
-import Repository from './pages/Repository';
+import Repository from './pages/Repository/repository';
 
-export default Routes = () => {
+const RoutesConfig = () => {
     return(
         <BrowserRouter>
             <Routes>
                 <Route index element={<Main />}/>
-                <Route path='/repository' element={<Repository />}/>
+                <Route path='/repository/:repository' element={<Repository />}/>
             </Routes>
         </BrowserRouter>
     );
 }
+
+export default RoutesConfig;

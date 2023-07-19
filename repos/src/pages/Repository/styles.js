@@ -68,7 +68,7 @@ export const IssuesList = styled.ul`
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            border: 2px solid #0d2636
+            border: 2px solid #0d2636;
         }
 
         div {
@@ -126,4 +126,30 @@ export const PageActions = styled.div`
             opacity: 0.5;
         }
     }
+`;
+
+export const FilterStatus = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+
+    button {
+        outline: 0;
+        border: 0;
+        background: #0D2636;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 4px;
+
+        &:nth-child(${props => props.active + 1}) {
+            background-color: #0071db;
+        }
+    }
+`;
+
+export const WithOutIssues = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 `;
